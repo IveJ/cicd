@@ -21,6 +21,7 @@ CI/CD Pipelines – Getting Started
 Once again, I’ll be using a sample application (the same one I used in previous posts) written in Python and hosted on GitHub. Github will be our source of truth for the code, and we’ll use the ActiveState Platform as the source of truth for the runtime environment, which includes a version of Python and all the packages the Github project requires. Jenkins will grab the source code from GitHub and the runtime from the ActiveState Platform, and then build and run its tests for a successful round of development iteration.
 
 
+
 First things first:
 
 If you haven’t already done so, install a Jenkins server on a Linux box using the instructions provided at https://jenkins.io/
