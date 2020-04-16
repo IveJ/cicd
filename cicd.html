@@ -7,7 +7,7 @@
 
 
 
-Simplifying Jenkins CI/CD Pipelines
+<h3>Simplifying Jenkins CI/CD Pipelines</h3>
 Jenkins CI/CD Pipelines
 With a long and somewhat chequered history, Jenkins can be considered the elder statesman of Continuous Integration and Continuous Delivery (CI/CD). It’s also the leading automation server on the market, so it makes the ideal candidate for continuing my ongoing series of “how to simplify CI/CD pipelines” begun in my previous posts on How to Build a CI/CD Pipeline for Python, How To Simplify CI/CD Pipelines For Windows, and Optimizing CI/CD Pipelines in GitHub Actions.
 
@@ -40,7 +40,7 @@ Check out the runtime environment for this project located on the ActiveState Pl
 Check out the project’s code base hosted on Github. Note that the source code project and the ActiveState Platform project are integrated using an activestate.yaml file located at the root folder of the Github code base. You can refer to instructions on how to create this file and how it works by referring to the ActiveState Platform docs here.
 All set? Let’s dive into the details.
 
-Integrating Jenkins With ActiveState
+<b>Integrating Jenkins With ActiveState</b>
 For Jenkins to be able to programmatically access the runtime on the ActiveState Platform, we’ll need to convert our credentials to an API Key and then add it to Jenkins’ global credentials.
 
 1. From Jenkins’ home page, click the Credentials item on the left hand side.
@@ -65,7 +65,7 @@ The JSON response contains your API key in the “token” field (not “tokenID
 
 You’re all set: Jenkins will now be able to pull the runtime environment from the ActiveState Platform at the time it runs the build.
 
-Integrating Jenkins With Github
+<b>Integrating Jenkins With Github</b>
 We also want Jenkins to also be able to programmatically pull the source code for our project from Github. We’ll use the new Blue Ocean UI to accomplish this as part of configuring our pipeline.
 
 1. Switch to the Blue Ocean interface using the “Open Blue Ocean” item on the left hand side of the actions menu:
@@ -84,7 +84,9 @@ Github Integration
 SHELL, which we’ll set to “/bin/bash” to get Jenkins to use bash. This is to be compatible with ActiveState CLI (a.k.a. State Tool) installation scripts.
 ACTIVESTATE_API_KEY, which we will set to “credentials(‘api-key’)” to be able to access the API key we previously entered in the credentials store.
 Pipeline Settings
-Building CI/CD Pipelines With Jenkins
+
+
+<b>Building CI/CD Pipelines With Jenkins</b>
 Now that we’ve set up the integration points, it’s time to create build steps.
 
 1. Click the (+) sign in the middle of the screen to create a new step and name it “Install State Tool.” We’ll also need to set it’s type. All of our steps will be of the type “Shell Script,” which will require script code (see below).
