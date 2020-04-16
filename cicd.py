@@ -114,5 +114,4 @@ As one of the oldest CI/CD systems on the market, Jenkins has incorporated a wea
 
 But plugins like Blue Ocean don’t deal with aspects of application complexity, such as dealing with the dependency problems of various languages. By incorporating language distributions from the ActiveState Platform into your CI/CD tooling, you can reduce the headaches resulting from language issues, and let your developers focus on what matters most: your product.
 
-If you’d like to try it out, sign up for a free ActiveState Platform account where you can create your own runtime environment and download the State Tool. You will also be able to discover other benefits of the platform like how it helps eliminate the “works on my machine” problem, and helps resolve the build provenance iss
 
