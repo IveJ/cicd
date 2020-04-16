@@ -1,7 +1,5 @@
-<html>
-<h3>
-Simplifying Jenkins CI/CD Pipelines
-</h3>
+
+  ### Simplifying Jenkins CI/CD Pipelines
 
 
 Jenkins CI/CD Pipelines
@@ -118,5 +116,3 @@ But plugins like Blue Ocean don’t deal with aspects of application complexity,
 
 If you’d like to try it out, sign up for a free ActiveState Platform account where you can create your own runtime environment and download the State Tool. You will also be able to discover other benefits of the platform like how it helps eliminate the “works on my machine” problem, and helps resolve the build provenance iss
 
-
-</html>
